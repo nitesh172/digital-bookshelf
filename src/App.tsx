@@ -184,7 +184,7 @@ export default function App() {
                 <div className="flex items-center gap-2 md:gap-3 pointer-events-auto bg-white/70 backdrop-blur-md px-3 py-1.5 md:px-4 md:py-2.5 rounded-2xl shadow-sm border border-black/5">
                     <Heart className="w-4 h-4 md:w-5 md:h-5 text-rose-500 fill-rose-500 animate-pulse" />
                     <div>
-                        <h1 className="text-xs md:text-base font-bold text-neutral-800 tracking-tight">Her Personal Library</h1>
+                        <h1 className="text-xs md:text-base font-bold text-neutral-800 tracking-tight">Ambika Library</h1>
                         <p className="hidden md:block text-xs text-neutral-500 font-medium">A customized reading sanctuary</p>
                     </div>
                 </div>
