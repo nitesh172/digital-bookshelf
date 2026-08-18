@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Volume2, VolumeX, Music, Sparkles } from 'lucide-react';
+import { VolumeX, Music } from 'lucide-react';
 
 type SoundType = 'none' | 'music';
 
 export const AmbientSound: React.FC = () => {
   const [activeSound, setActiveSound] = useState<SoundType>('none');
-  const [volume, setVolume] = useState<number>(0.3);
+  const [volume] = useState<number>(0.3);
   const audioCtxRef = useRef<AudioContext | null>(null);
   
   // Node references for cleanup

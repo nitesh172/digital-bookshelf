@@ -657,7 +657,7 @@ export const BookshelfScene: React.FC<BookshelfSceneProps> = ({
     isTransitioning,
     setIsTransitioning,
     isFlipped,
-    setIsFlipped,
+    setIsFlipped: _setIsFlipped,
     isSearchActive = false,
     warmFilterIntensity
 }) => {
