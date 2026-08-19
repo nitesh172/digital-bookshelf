@@ -8,14 +8,25 @@
     color: #2c2a29;
 }
 
+html,
 body {
     margin: 0;
     padding: 0;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+    height: 100dvh;
+    min-height: 100dvh;
     user-select: none;
     -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+/* Prevent mobile browser auto-zoom when focusing inputs */
+@media screen and (max-width: 768px) {
+    input, select, textarea {
+        font-size: 16px !important;
+    }
 }
 
 #root {

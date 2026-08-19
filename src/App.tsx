@@ -175,7 +175,7 @@ export default function App() {
     };
 
     return (
-        <div className={`relative w-screen h-screen flex flex-col transition-colors duration-500 overflow-hidden bg-[#f7f6f3] text-[#2c2a29]`}>
+        <div className={`relative w-screen h-[100dvh] flex flex-col transition-colors duration-500 overflow-hidden bg-[#f7f6f3] text-[#2c2a29]`}>
             {/* Dynamic Warm Amber Overlay */}
             <div className="absolute inset-0 z-40 pointer-events-none" style={getWarmFilterStyle()} />
 
@@ -213,7 +213,7 @@ export default function App() {
                             onKeyDown={(e) => {
                                 if (e.key === 'Enter') handleSearch();
                             }}
-                            className="w-24 md:w-40 bg-transparent text-[11px] md:text-xs text-neutral-800 placeholder-neutral-400 outline-none font-medium"
+                            className="w-28 sm:w-32 md:w-40 bg-transparent text-base md:text-xs text-neutral-800 placeholder-neutral-400 outline-none font-medium leading-normal"
                         />
                         {(searchQuery || isSearchActive) && (
                             <button
